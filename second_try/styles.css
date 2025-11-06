@@ -1,0 +1,179 @@
+.head_of_site{
+    background-color: #d43e14;
+    align-items: center;
+    text-align: center;
+    height: 450px;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #f5f5f5;
+}
+.head_of_site img{
+    border-radius: 40%;
+    margin: 20px 0px 30px;
+    border: 5px double #a32b0f;
+}
+/*.works{
+   display: flex;
+    gap: 30px; 
+    justify-content: center;
+    align-items: center; 
+}*/
+.first_two_pictures{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #fcd48a;
+    justify-items: center;
+    height: 375px;
+}
+.first_picture,.second_picture{
+    margin: 25px;
+}
+.first_picture img, .second_picture img{
+    border: 10px double #e0a96d;
+    border-radius: 10%;
+}
+.button-img1,.button-img2{
+    background: none;
+    border: none;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+.button-img1:hover,.button-img2:hover{
+    filter: brightness(0.7);
+    transform: translateY(-20px);
+}
+.second_two_pictures{
+     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #051f45;
+    justify-items: center;
+    height: 375px;
+}
+.third_picture,.fourth_picture{
+    margin: 25px;
+}
+.third_picture img, .fourth_picture img{
+    border-radius: 10%;
+    border: 10px double #1a387b;
+}
+.button-img3,.button-img4{
+    background: none;
+    border: none;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+.button-img3:hover,.button-img4:hover{
+    filter: brightness(0.7);
+    transform: translateY(-20px);
+}
+.third_two_pictures{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #a45c5c;
+    justify-items: center;
+    height: 375px;
+}
+.fifth_picture,.sixth_picture{
+    margin: 25px;
+}
+.fifth_picture img, .sixth_picture img{
+    border-radius: 10%;
+    border: 10px double #b27474;
+}
+.button-img5,.button-img6{
+    background: none;
+    border: none;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+.button-img5:hover,.button-img6:hover{
+    filter: brightness(0.7);
+    transform: translateY(-20px);
+}
+.fourth_two_pictures{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #d0d0b4;
+    justify-items: center;
+    height: 375px;
+}
+.seventh_picture,.eighth_picture{
+    margin:25px;
+}
+.seventh_picture img,.eighth_picture img{
+    border-radius: 10%;
+    border: 10px double #bfc09a;
+}
+.button-img7,.button-img8{
+    background: none;
+    border: none;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+.button-img7:hover,.button-img8:hover{
+    filter: brightness(0.7);
+    transform: translateY(-20px);
+}
+.contacts{
+    display: flex;
+    background-color: #314354;
+    align-items: center;
+    height: 375px;
+    margin: 0;
+    justify-content: center;
+}
+.contacts a{
+    color:#f5f5f5;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 32px; 
+    border-radius: 10%;
+    border: 10px double #41576a;       
+}
+.button{
+    background: none;
+    border: none;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+.button:hover{
+    filter: brightness(0.7);
+    transform: translateY(-20px);
+}
+a:hover{
+    color: #fcd48a;
+    text-decoration: underline;
+}
+a:active {
+    color: #051f45;       /* цвет при клике */
+}
+
+a:visited {
+    color: #a45c5c;       /* цвет уже посещённых ссылок */
+}
+/*Чтобы убрать отступы браузера и растянуть на всю доступную ширину*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+@media (max-width: 775px) {
+    .first_two_pictures,
+    .second_two_pictures,
+    .third_two_pictures,
+    .fourth_two_pictures {
+        grid-template-columns: 1fr; /* все элементы в одну колонку */
+        gap: 20px; /* расстояние между картинками */
+        height: auto; /* чтобы блоки адаптировались по высоте */
+    }
+
+    .first_picture,
+    .second_picture,
+    .third_picture,
+    .fourth_picture,
+    .fifth_picture,
+    .sixth_picture,
+    .seventh_picture,
+    .eighth_picture {
+        margin: 15px auto; /* центрируем картинки с меньшими отступами */
+    }
+}
